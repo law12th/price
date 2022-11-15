@@ -1,0 +1,25 @@
+{
+	"name": "logging",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./build/index.js",
+	"scripts": {
+		"clean": "del ./build/*",
+		"build": "npm run clean && tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/morgan": "^1.9.3",
+		"eslint": "^7.23.0",
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"morgan": "^1.10.0",
+		"winston": "^3.8.2",
+		"winston-daily-rotate-file": "^4.7.1"
+	}
+}
