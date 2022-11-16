@@ -1,0 +1,22 @@
+{
+	"name": "price-errors",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./build/index.js",
+	"types": "./build/index.d.ts",
+	"scripts": {
+		"clean": "del ./build/*",
+		"build": "npm run clean && tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*"
+	},
+	"dependencies": {
+		"express-validator": "^6.14.2",
+		"price-constants": "workspace:*"
+	}
+}
