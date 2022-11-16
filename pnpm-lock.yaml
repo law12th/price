@@ -51,12 +51,14 @@ importers:
       eslint: ^7.23.0
       eslint-config-custom: workspace:*
       morgan: ^1.10.0
+      price-constants: workspace:*
       tsconfig: workspace:*
       typescript: ^4.7.4
       winston: ^3.8.2
       winston-daily-rotate-file: ^4.7.1
     dependencies:
       morgan: 1.10.0
+      price-constants: link:../price-constants
       winston: 3.8.2
       winston-daily-rotate-file: 4.7.1_winston@3.8.2
     devDependencies:
@@ -65,6 +67,14 @@ importers:
       eslint-config-custom: link:../eslint-config-custom
       tsconfig: link:../tsconfig
       typescript: 4.8.4
+
+  packages/price-constants:
+    specifiers:
+      eslint-config-custom: workspace:*
+      tsconfig: workspace:*
+    devDependencies:
+      eslint-config-custom: link:../eslint-config-custom
+      tsconfig: link:../tsconfig
 
   packages/tsconfig:
     specifiers: {}
