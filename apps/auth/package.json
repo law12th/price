@@ -1,5 +1,5 @@
 {
-	"name": "logging",
+	"name": "auth",
 	"version": "1.0.0",
 	"description": "",
 	"main": "./build/index.js",
@@ -12,16 +12,15 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@types/morgan": "^1.9.3",
-		"eslint": "^7.23.0",
 		"eslint-config-custom": "workspace:*",
-		"tsconfig": "workspace:*",
-		"typescript": "^4.7.4"
+		"tsconfig": "workspace:*"
 	},
 	"dependencies": {
-		"morgan": "^1.10.0",
-		"winston": "^3.8.2",
-		"winston-daily-rotate-file": "^4.7.1",
-		"price-constants": "workspace:*"
+		"@nestjs/common": "^9.2.0",
+		"@nestjs/core": "^9.2.0",
+		"reflect-metadata": "^0.1.13",
+		"rxjs": "^7.5.7",
+		"price-constants": "workspace:*",
+		"logging": "workspace:*"
 	}
 }
