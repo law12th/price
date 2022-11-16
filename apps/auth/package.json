@@ -2,11 +2,11 @@
 	"name": "auth",
 	"version": "1.0.0",
 	"description": "",
-	"main": "./build/index.js",
-	"types": "./build/index.d.ts",
+	"main": "./build/main.js",
+	"types": "./build/main.d.ts",
 	"scripts": {
-		"clean": "del ./build/*",
-		"build": "npm run clean && tsc"
+		"prebuild": "del ./build/*",
+		"build": "nest build"
 	},
 	"keywords": [],
 	"author": "",
@@ -17,10 +17,12 @@
 	},
 	"dependencies": {
 		"@nestjs/common": "^9.2.0",
+		"@nestjs/config": "^2.2.0",
 		"@nestjs/core": "^9.2.0",
-		"reflect-metadata": "^0.1.13",
-		"rxjs": "^7.5.7",
+		"logging": "workspace:*",
+		"pg": "^8.8.0",
 		"price-constants": "workspace:*",
-		"logging": "workspace:*"
+		"reflect-metadata": "^0.1.13",
+		"rxjs": "^7.5.7"
 	}
 }
