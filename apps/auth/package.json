@@ -6,7 +6,10 @@
 	"types": "./build/main.d.ts",
 	"scripts": {
 		"prebuild": "del ./build/*",
-		"build": "nest build"
+		"build": "nest build",
+		"start": "pm2-runtime ./build/main.js",
+		"start:dev": "pm2-dev ./build/main.js",
+		"dev": "nest start --watch"
 	},
 	"keywords": [],
 	"author": "",
@@ -19,10 +22,12 @@
 		"@nestjs/common": "^9.2.0",
 		"@nestjs/config": "^2.2.0",
 		"@nestjs/core": "^9.2.0",
+		"@nestjs/typeorm": "^9.0.1",
 		"logging": "workspace:*",
 		"pg": "^8.8.0",
 		"price-constants": "workspace:*",
 		"reflect-metadata": "^0.1.13",
-		"rxjs": "^7.5.7"
+		"rxjs": "^7.5.7",
+		"typeorm": "^0.3.10"
 	}
 }
