@@ -1,8 +1,9 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Base } from "./base.entity";
 
 @Entity({ schema: "action", name: "customer" })
-export class Customer {
-	@PrimaryGeneratedColumn()
+export class Customer extends Base {
+	@PrimaryGeneratedColumn({ name: "id" })
 	id: number = 0;
 
 	@Column({ name: "given_name", type: "text" })

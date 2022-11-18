@@ -6,7 +6,7 @@
 	"types": "./build/main.d.ts",
 	"scripts": {
 		"prebuild": "del ./build/*",
-		"build": "nest build",
+		"_": "nest build",
 		"start": "pm2-runtime ./build/main.js",
 		"start:dev": "pm2-dev ./build/main.js",
 		"dev": "nest start --watch"
@@ -34,6 +34,7 @@
 		"price-constants": "workspace:*",
 		"reflect-metadata": "^0.1.13",
 		"rxjs": "^7.5.7",
-		"typeorm": "^0.3.10"
+		"typeorm": "^0.3.10",
+		"price-seeding": "workspace:*"
 	}
 }
